@@ -51,7 +51,7 @@ public class BaseApplication extends Application {
                     }
                 };
         AppsFlyerLib.getInstance().init(AF_DEV_KEY, conversionDataListener, getApplicationContext());
-        AppsFlyerLib.getInstance().registerConversionListener(this, conversionDataListener);
+        //AppsFlyerLib.getInstance().registerConversionListener(this, conversionDataListener);
         AppsFlyerLib.getInstance().startTracking(this, AF_DEV_KEY);
     }
 }
