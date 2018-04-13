@@ -1,8 +1,8 @@
 package com.yao.appsflyerdemo;
 
 import android.annotation.SuppressLint;
-import android.app.Application;
 import android.provider.Settings;
+import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 
 import com.appsflyer.AppsFlyerConversionListener;
@@ -16,7 +16,7 @@ import java.util.Map;
  * @CreateDate: 2018/4/12 上午11:11
  * @Version:
  */
-public class BaseApplication extends Application {
+public class BaseApplication extends MultiDexApplication {
 
     public static final String AF_DEV_KEY = "bRhGdiKC97r7L9uZTD3XMP";
 
