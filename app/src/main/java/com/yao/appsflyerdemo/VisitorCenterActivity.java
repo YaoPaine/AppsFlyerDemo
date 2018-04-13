@@ -14,10 +14,12 @@ import com.appsflyer.AppsFlyerLib;
  * @Version:
  */
 public class VisitorCenterActivity extends Activity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AppsFlyerLib.getInstance().sendDeepLinkData(this);
         Log.e(AppsFlyerLib.LOG_TAG, "onCreate: " + getIntent().getDataString());
+        finish();
     }
 }
